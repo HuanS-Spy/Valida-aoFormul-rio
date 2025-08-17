@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <form action="" method="" class="containerFormulario">
+      <h1>Create account</h1>
+      <fieldset class="formulario__campo">
+        <label for="nome">Nome</label>
+        <input
+          id="nome"
+          class="campoEscrita"
+          type="text"
+          name="nome"
+          placeholder="Insira seu nome"
+          minlength="4"
+          required
+        />
+        <span class="mensagem-erro"></span>
+      </fieldset>
+      <fieldset class="formulario__campo">
+        <label for="email">Email</label>
+        <input
+          id="email"
+          class="campoEscrita"
+          type="email"
+          name="email"
+          placeholder="Seu melhor email"
+          minlength="10"
+          required
+        />
+        <span class="mensagem-erro"></span>
+      </fieldset>
+      <fieldset class="formulario__campo">
+        <label for="idade">Data de nascimento</label>
+        <input
+          id="idade"
+          class="campoEscrita"
+          type="date"
+          name="idade"
+          required
+        />
+        <span class="mensagem-erro"></span>
+      </fieldset>
+      <fieldset class="formulario__campo">
+        <label for="cpf">CPF</label>
+        <input
+          id="cpf"
+          class="campoEscrita"
+          type="text"
+          name="cpf"
+          placeholder="Insira seu CPF (apenas números)"
+          minlength="11"
+          maxlength="11"
+          required
+        />
+        <span class="mensagem-erro"></span>
+      </fieldset>
+      <fieldset class="formulario__campo">
+        <input
+          id="termos"
+          class="campoTermo"
+          type="checkbox"
+          name="termos"
+          placeholder="Aceite os termos de uso e privacidade!"
+          required
+        />
+        <label for="termos"
+          >Você aceita os termos de privacidade e segurança de dados?</label
+        >
+
+        <span class="mensagem-erro"></span>
+      </fieldset>
+      <div class="containerBotoes">
+        <input type="submit" value=" Cadastrar Usuário " class="botaoEnviar" />
+        <input type="reset" value="Limpar" class="botaoLimpar" />
+      </div>
+    </form>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>

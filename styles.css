@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(241, 236, 225);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.containerFormulario {
+  background-color: rgb(106, 122, 138);
+  box-shadow: 0.2em 0.2em 1em 0.6em rgba(200, 15, 15, 0.6);
+  display: flex;
+  border-radius: 0.5em;
+  flex-direction: column;
+  align-items: baseline;
+  margin: 2em;
+  padding: 2em;
+}
+
+.containerBotoes {
+  margin-top: 1em;
+  gap: 1em;
+  display: flex;
+}
+
+.formulario__campo {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border: none;
+  padding: 0;
+}
+
+.botaoEnviar {
+  padding: 0.5em 3em;
+}
+.botaoLimpar {
+  padding: 0.5em 3em;
+}
+
+.campoEscrita {
+  box-sizing: border-box;
+  margin: 0.5em 0 1em;
+  width: 100%;
+  padding: 0.6em;
+}
+
+.mensagem-erro {
+  color: #ff0303de; /* Um tom de vermelho */
+  font-size: 1rem; /* Tamanho de fonte menor */
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  display: none; /* Escondido por padrão */
+}
+
+/* Mostra a mensagem quando o campo é inválido */
+.campoEscrita:invalid + .mensagem-erro {
+  display: block;
+}
